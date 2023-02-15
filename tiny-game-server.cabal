@@ -1,0 +1,40 @@
+cabal-version:  2.4
+name:           tiny-game-server
+version:        0.1
+synopsis:       At your service.
+description:    At your service..
+category:       Game
+homepage:       https://github.com/TristanCacqueray/tiny-game-server#readme
+bug-reports:    https://github.com/TristanCacqueray/tiny-game-server/issues
+author:         Tristan de Cacqueray
+maintainer:     tdecacqu@redhat.com
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/TristanCacqueray/tiny-game-server
+
+executable tiny-game-server
+  main-is: TinyGameServer.hs
+  ghc-options: -Wall -fwarn-incomplete-uni-patterns -Wno-partial-type-signatures -threaded -rtsopts -with-rtsopts=-T
+  build-depends:
+      base <5
+    , ki
+    , http-types
+    , lucid2
+    , lucid2-xstatic
+    , rio
+    , posix-pty
+    , process
+    , string-qq
+    , wai
+    , warp
+    , websockets
+    , wai-websockets
+    , xstatic
+    , xstatic-th
+    , xstatic-xterm
+    , xstatic-sakura
+  default-language: GHC2021
