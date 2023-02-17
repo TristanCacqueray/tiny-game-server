@@ -44,17 +44,17 @@
     "tiny-games-hs": {
       "flake": false,
       "locked": {
-        "lastModified": 1676659933,
-        "narHash": "sha256-F+NN3f8naGdHlvL2EYwqCxpQ64CJA3mbeKW1vn8iBfc=",
+        "lastModified": 1676663815,
+        "narHash": "sha256-b71blGeLYf1PS+/4oOQXr+1nJ0nOxf1ADNQoTaKWcF4=",
         "owner": "haskell-game",
         "repo": "tiny-games-hs",
-        "rev": "5ef87a55770a6398cfa6657455bc2a3ed32c552f",
+        "rev": "0bd8ddcc633c078644ac6d9b1ccd0335c2ed46f2",
         "type": "github"
       },
       "original": {
         "owner": "haskell-game",
         "repo": "tiny-games-hs",
-        "rev": "5ef87a55770a6398cfa6657455bc2a3ed32c552f",
+        "rev": "0bd8ddcc633c078644ac6d9b1ccd0335c2ed46f2",
         "type": "github"
       }
     }

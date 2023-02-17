@@ -7,7 +7,7 @@
     ;
     # fetch the tiny-game-hs repository
     tiny-games-hs.url =
-      "github:haskell-game/tiny-games-hs/5ef87a55770a6398cfa6657455bc2a3ed32c552f";
+      "github:haskell-game/tiny-games-hs/0bd8ddcc633c078644ac6d9b1ccd0335c2ed46f2";
     tiny-games-hs.flake = false;
   };
   outputs = { self, hspkgs, tiny-games-hs }:

@@ -65,6 +65,7 @@ allGames =
             , ("mini-othello", Game "hellwolf" "-1.gif" m [])
             , ("one-dot", Game "OsePedro" ".png" m [])
             , ("expressit", Game "Greg8128" ".png" m [])
+            , ("life", Game "Rens van Hienen" ".png" l [])
             ]
         )
     ,
