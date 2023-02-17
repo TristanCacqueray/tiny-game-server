@@ -30,7 +30,6 @@ import Network.Wai.Handler.Warp (run)
 import Network.Wai.Handler.WebSockets (websocketsApp)
 import Network.WebSockets as WS
 
--- import System.Environment (lookupEnv)
 -- posix-pty to spawn runhaskell process
 import System.Posix.Pty qualified as Pty
 

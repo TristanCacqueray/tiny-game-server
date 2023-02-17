@@ -33,10 +33,10 @@
       # The tiny-game-server executable.
       pkg-exe = pkgs.haskell.lib.justStaticExecutables hsPkgs.tiny-game-server;
       run-script = pkgs.writers.writeBash "tiny-game-server.sh" ''
-        export PATH=${pkgs.coreutils}/bin/:${ghc}/bin
-        export TINY_GAME_HS=${tiny-games-hs}
+        export PATH=$PATH:${ghc}/bin
         export LOCALE_ARCHIVE=${pkgs.glibcLocales}/lib/locale/locale-archive
-        export LC_ALL=en_US.UTF-8
+        export TINY_GAME_HS=${tiny-games-hs}
+        export LC_ALL=C.UTF-8
         exec ${pkg-exe}/bin/tiny-game-server
       '';
 
@@ -56,7 +56,6 @@
 
       packages."x86_64-linux".container = pkgs.dockerTools.buildLayeredImage {
         name = "ghcr.io/TristanCacqueray/tiny-game-server";
-        contents = [ ghc ];
         extraCommands = "mkdir -p -m 1777 tmp";
         tag = "latest";
         created = "now";
